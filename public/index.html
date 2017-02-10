@@ -1,33 +1,152 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS/HTML Workshop with Drivy</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    
+    <link rel="icon" type="image/png" href="images/drivycon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drivy</title>
+
   </head>
+  
   <body>
-    <div id="car">
-      <input class="model" type="text" placeholder="Car model"/>
-      <input class="price-by-day" type="number" placeholder="Price by day"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-    </div>
-    <div id="rental">
-      <input class="begin" type="date" placeholder="Rental begin date"/>
-      <input class="end" type="date" placeholder="Rental end date"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script id="template" type="x-tmpl-mustache">
-      {{#actors}}
-        <div class="actor">
-          <span>{{who}}</span>
-          <span>{{type}}</span>
-          <span>{{amount}}</span>
+    
+    <div id="body">
+    
+    <header>  
+
+    </header>
+
+    <section>
+      <aside>
+        <nav>
+          
+          <div class="fixe" style="position: static; top: 0px; float:left;">
+            
+            <div id="woe">
+             <ul class="woe">
+                <li>Voitures Disponible :</li>
+                <li>Peugeot 306</li> 
+                <li>Range Rover Sport</li>
+                <li>Porshe boxster</li>
+              </ul>
+            </div>
+            
+            <div id="car"> 
+              <input class="model" type="text" placeholder="Car model"/> 
+            </br>
+              <input class="price-by-day" type="number" placeholder="Price by day"/>
+              <input class="price-by-km" type="number" placeholder="Price by km"/> 
+            </div>
+
+            </br>
+            
+            <div id="rental">
+              <input class="begin" type="date" placeholder="Rental begin date"/>
+              <input class="end" type="date" placeholder="Rental end date"/> 
+              <input class="distance" type="number" placeholder="Distance in km"/> 
+            </div>
+
+            </br>
+
+            <div class = "option">
+              <div>Options</div>
+              <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
+                <input type="checkbox" id="switch-2" class="mdl-switch__input">
+                <span class="mdl-switch__label"></span>
+              </label>
+            </div>
+
+            </br>
+
+            <button id="compute">Compute</button>
+            
+          </div>
+        </nav>
+      </aside>
+
+
+      <div class = "audir">
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Peugeot 306</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            Price per day : 20 </br>
+            Price per Km : 0.10    
+          </div>
         </div>
-      {{/actors}}
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
-    <script src="drivy.js"></script>
-    <script src="index.js"></script>
+
+        </br>
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title1">
+            <h2 class="mdl-card__title-text">Range Rover Sport</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            Price per day : 60 </br>
+            Price per Km : 0.30    
+          </div>
+        </div>
+
+        </br>
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title2">
+            <h2 class="mdl-card__title-text">Porshe boxter</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            Price per day : 100 </br>
+            Price per Km : 0.45    
+          </div>
+        </div>
+      </div>
+
+   
+      <div id="actors"></div>
+      <script id="template" type="x-tmpl-mustache">
+        {{#actors}}
+          <div class="actor">            
+            <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+              <thead>
+                <tr>
+                  <th class="mdl-data-table__cell--non-numeric">Who</th>
+                  <th>Type</th>
+                  <th>price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric"> <span>{{who}}</span> </td>
+                  <td> <span>{{type}}</span> </td>
+                  <td> <span>{{amount}}</span> </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        {{/actors}}
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+      <script src="drivy.js"></script>
+      <script src="index.js"></script>
+                
+    </section>
+
+    <footer>
+      <div class="imgfooter"></div>
+      <div id="footer">
+        <p>
+          <a href="https://www.facebook.com/drivyfr/" target="_blank"><img src="images/facebook.png" /></a>
+          <a href="https://twitter.com/drivy" target="_blank"><img src="images/twitter.png" /></a><br/>
+          OUSMAN ASADULLAH - ESILV - WEB APPLICATIONS - WORKSHOP 2 - 2017
+        </p>
+      </div>
+    </footer>
+
+    </div>
   </body>
 </html>

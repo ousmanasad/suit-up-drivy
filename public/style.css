@@ -1,0 +1,227 @@
+html
+{
+	height: 100%;
+}
+
+body
+{
+	height: 100%;
+    background: url('images/bg.jpg');
+    font-family: Tahoma, Arial, sans-serif;
+    color: #181818;
+	margin: 0;
+}
+
+#fixe
+{
+	/**
+	position: fixed;
+	top: 0px;
+	bottom: 0px; **/
+}
+
+#body
+{
+	min-height: 100%;
+	position: relative;
+	background: url('images/body.png');
+    width: 891px;
+    margin: auto;
+}
+
+a
+{
+    color: #181818;
+    text-decoration: none;
+}
+
+a:hover
+{
+	color: #f8d287;
+}
+
+hr
+{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+	width: 300px;
+}
+
+
+/* BANNIERE */
+header
+{
+	background: url('images/banniere.jpg');
+	height: 276px;
+	width: 851px;
+	margin: 0 0 0 20px;
+}
+
+/* SIDEBAR */
+aside
+{
+	background-image: url('images/aside2.jpg');
+	margin-left: 20px;
+	min-height: 100%;
+}
+
+aside nav
+{
+	width: 178px;
+	padding-top: 20px;
+	padding-bottom: 700px;
+}
+
+aside nav ul
+{
+    list-style-type: none;
+	padding: 0px 0px 0px 0px;
+}
+
+/*--WOE--*/
+aside nav #woe li
+{
+	display: block;
+	font-style: italic;
+	/*text-align: center;*/
+	padding-left: 10px;
+	width: 145px;
+}
+
+aside nav #woe
+{
+font-size: 11.4px;
+background-color: #f5f8fd;
+margin: 20px 10px 20px 10px;
+}
+
+aside nav .woe
+{
+margin: 0px 0 0 0;
+padding: 10px 0 10px 0;
+border-bottom: 1px solid #d1d1d1;
+border-right: 1px solid #d1d1d1;
+border-left: 1px solid #d1d1d1;
+}
+
+aside nav #car
+{
+	margin-left: 14px;
+}
+
+aside nav #rental
+{
+	margin-left: 14px;
+}
+
+aside nav .option
+{
+	margin-left: 70px;
+}
+
+aside nav button
+{
+	margin-left: 10px;
+	width: 150px;
+}
+
+/* contenu */
+section
+{
+width: 851px;
+display: flex;
+height: 800px;
+}
+
+table
+{
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 240px;
+}
+
+td, th /* Mettre une bordure sur les td ET les th */
+{
+	width: 150px;
+}
+
+.demo-card-wide.mdl-card {
+  width: 200px;
+  height: 20px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('images/p306.jpg') center / cover;
+}
+
+.demo-card-wide > .mdl-card__title1 {
+  color: #fff;
+  height: 176px;
+  background: url('images/rrsport.jpg') center / cover;
+}
+
+.demo-card-wide > .mdl-card__title2 {
+  color: #fff;
+  height: 176px;
+  background: url('images/pbox.jpg') center / cover;
+}
+
+.audir
+{
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+/*--------FOOOTERRRR----------*/
+footer
+{
+	margin-left: 108px;
+	position: absolute;
+    	bottom: 0;
+}
+
+#footer
+{
+	background-color: #393939;
+	width: 670px;
+	border-left: 1px solid #78797b;
+	border-right: 1px solid #78797b;
+	padding-bottom: 3px;
+}
+
+footer p
+{
+	margin: 0 0 0px 20px;
+	text-align: center;
+	color: #f5f8fd;
+	font-size: 11px;
+}
+
+footer ul
+{
+    font-size: 12px;
+    list-style-type: none;
+	display: flex;
+	justify-content: center;
+	color: #f5f8fd;
+	margin: 0;
+	padding: 0;
+}
+
+footer ul
+{
+    margin: auto;
+}
+
+footer a
+{
+	text-align: center;
+    font-size: 12px;
+	color: #f5f8fd;
+    text-decoration: none;
+	padding: 0 2px 0 2px;
+	margin: 0;
+}
